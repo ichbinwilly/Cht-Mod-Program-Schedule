@@ -1,5 +1,6 @@
 # Cht Mod Program Schedule
-The "Cht Mod Program Schedule" is a sample application created to show how to do web crawler periodically. The project is based on the [Express](https://expressjs.com/) framework and [Bootstrap](http://getbootstrap.com/) to build a simple app that is deployed to [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/). The project is based on [AWS Sample](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html) as a template and you may follow the [Getting Started with Node.js on Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html) to build up the system.
+
+The **Cht Mod Program Schedule** is a sample application created to show how to do web crawler periodically. The project is based on the [Express](https://expressjs.com/) framework and [Bootstrap](http://getbootstrap.com/) to build a simple app that is deployed to [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/). And its original project is from [AWS Sample](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html). Also I would recommend to follow the [Getting Started with Node.js on Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html) to build up the system.
 ![screenshot](screenshot.PNG)
 
 ## Requirements:
