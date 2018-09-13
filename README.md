@@ -22,6 +22,8 @@ node app
 ## Live Demo
  > [Live Demo on AWS Elastic Beanstalk](http://tutorials-env.tfq3pbepbu.us-east-2.elasticbeanstalk.com/)
 
+![screenshot2](https://cdn-images-1.medium.com/max/800/1*IYupOsr6YuIJZVjy6oqBzQ.png)
+
 ## Explain
 We use the [request module](https://www.npmjs.com/package/request) to make http calls.
 ```js
