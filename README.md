@@ -21,3 +21,28 @@ node app
 ```
 ## Live Demo
  > [Live Demo on AWS Elastic Beanstalk](http://tutorials-env.tfq3pbepbu.us-east-2.elasticbeanstalk.com/)
+
+## Explain
+We use the [request module](https://www.npmjs.com/package/request) to make http calls.
+```js
+request(url, (err, res, body) => {
+ 
+ //
+ //process here
+ //
+ 
+});
+```
+Put the result of web crawler into cheerio
+```js
+const $ = cheerio.load(body)
+```
+And finally we analysis and break down the DOM to fetch the data. The program information is wrapped in class wrapper.
+So the first level is calss rowat. We also need to fetch the class rowat_gray which represents the information in highlighted grey row as well.
+```js
+$('.wrapper .rowat, .rowat_gray').each(function(i, elem) {
+   tvshows.push(
+    $(this).text().split('\n')
+  )
+})
+```
