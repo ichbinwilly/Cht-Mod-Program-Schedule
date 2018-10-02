@@ -20,7 +20,7 @@ Execute this command to run the project:
 node app
 ```
 ## Live Demo
- > [Live Demo on AWS Elastic Beanstalk](http://tutorials-env.tfq3pbepbu.us-east-2.elasticbeanstalk.com/)
+ > [Live Demo on AWS Elastic Beanstalk](http://chtmod-env.sbfgd8xg3y.us-east-2.elasticbeanstalk.com/)
 
 ![screenshot2](https://cdn-images-1.medium.com/max/800/1*IYupOsr6YuIJZVjy6oqBzQ.png)
 
