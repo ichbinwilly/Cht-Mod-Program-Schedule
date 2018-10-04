@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CHT MOD Program Schedule</title>
+    <title>中華電信MOD節目表</title>
 
 	<link href="/static/bootstrap/css/theme/flatly/bootstrap.css" rel="stylesheet">
 
@@ -24,7 +24,7 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Press</a></li>
         </ul>
-        <h3 class="text-muted">CHT MOD Program Schedule</h3>
+        <h3 class="text-muted">MOD節目表</h3>
       </div>
 	  <% if (flask_debug === 'true') { %>
       <div class="alert alert-danger">
@@ -41,11 +41,26 @@
         <p id="signupErrorText">Well this is embarrassing. It looks like we're having trouble getting you on the list.</p>
       </div>
       <div class="jumbotron">
-        <h1>CHT Program Schedule</h1>
-        <p class="lead">Look up the latest tv shows</p>
-        <p><a class="btn btn-lg btn-success"  data-toggle="modal" href="#signupModal">Go</a></p>
+        <h2>MOD 節目表</h2>
+        
+        <p><a class="btn btn-lg btn-success hidden"  data-toggle="modal" href="#signupModal">Go</a></p>
       </div>
-
+		<div class="container">
+		<p class="lead">更新時間：<%= update_time %></p>
+				<% for(var i=0; i<tvshow.length; i++) {%>
+				 <div class="row show-grid">
+				  <div class="col-sm-1"><%= tvshow[i].channelNumber %></div>
+				  <div class="col-sm-3"><%= tvshow[i].channelName %></div>
+				  <div class="col-sm-8">
+					  <ul>
+							<li><%= tvshow[i].comingup1 %></li>
+							<li><%= tvshow[i].comingup2 %></li>
+							<li><%= tvshow[i].comingup3 %></li>
+						</ul>
+				  </div>
+				 </div>
+				 <% } %>  
+			 </div>
 
       <div class="footer">
         <p>&copy; CHT Program Schedule 2018</p>
@@ -60,20 +75,8 @@
                <h4 class="modal-title">Program Schedule</h4>
              </div>
 			 <div class="modal-body">
-			 <ul>
-			 </hr>
-			 </ul>
-			  <ul>  
-				 <% for(var i=0; i<tvshow.length; i++) {%>  
-				  <li><%= tvshow[i].channelNumber %> <%= tvshow[i].channelName %>
-					<ul>
-						<li><%= tvshow[i].comingup1 %></li>
-						<li><%= tvshow[i].comingup2 %></li>
-						<li><%= tvshow[i].comingup3 %></li>
-					</ul>
-				  </li>  
-				 <% } %>  
-				 </ul> 
+			 
+			 
 			 </div>
              <div class="modal-body" style="display:none">
                <form id="signupForm" role="form">
@@ -95,7 +98,7 @@
                  </div>
              </div>
              <div class="modal-footer">
-               <button id="signup" type="button" class="btn btn-primary">Sign Up!</button>
+               <button id="signup" type="button" class="btn btn-primary hidden">Sign Up!</button>
              </div>
 			 
            </div><!-- /.modal-content -->
