@@ -50,6 +50,6 @@ $('.wrapper .rowat, .rowat_gray').each(function(i, elem) {
 update the latest program every hour
 ```js
 cron.schedule('0 0 */1 * * *', function(){
-                  // ↑means every hour
+                  // ↑execute on every hour (*/1 -> (0~24 hour by every one hour) 0 minute 0 second
 });
 ```
