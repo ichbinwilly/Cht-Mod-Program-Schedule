@@ -47,3 +47,9 @@ $('.wrapper .rowat, .rowat_gray').each(function(i, elem) {
   )
 })
 ```
+update the latest program every hour
+```js
+cron.schedule('0 0 */1 * * *', function(){
+                  // ↑means every hour
+});
+```
