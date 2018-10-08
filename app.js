@@ -63,6 +63,7 @@ var cluster = require('cluster');
 		}
 		else
 		{
+			//the following is too dirty, need to refactor
 			try {
 				var result = arr[0].match(reg)[num].substr(0,5) + ' ' + arr[0].match(reg)[num].substr(5,arr[0].match(reg)[num].length - 5);
 			}
