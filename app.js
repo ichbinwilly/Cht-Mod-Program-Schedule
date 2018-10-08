@@ -53,7 +53,8 @@ var cluster = require('cluster');
 	//parse tv show program
 	let weathers = [];
 	function parseStr(arr, num){
-		let reg = /\d{2}:\d{2}\s*\S*\w*\s*[- ]*/g;
+		//let reg = /\d{2}:\d{2}\s*\S*\w*\s*[- ]*/g;
+		let reg = /((Time)?\d{2}:\d{2})((Content)?.+?)(?=((\d{2}:\d{2})|\n|(全)))/g;
 		//console.log(arr);
 		if(arr[0].match(reg) == null)
 		{
