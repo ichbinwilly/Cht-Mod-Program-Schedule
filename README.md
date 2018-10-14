@@ -53,3 +53,5 @@ cron.schedule('0 0 */1 * * *', function(){
                   // ↑execute on every hour (*/1 -> (0~24 hour by every one hour) 0 minute 0 second
 });
 ```
+## Updates
+I'm going to revise this project into a Line bot which provides the program query service.
