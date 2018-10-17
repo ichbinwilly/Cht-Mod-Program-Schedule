@@ -58,3 +58,4 @@ I'm going to revise this project into a Line bot which provides the program quer
 * Line bot
 * Carousel
 * Buttons
+* TODO: add entertainment and news
