@@ -56,3 +56,5 @@ cron.schedule('0 0 */1 * * *', function(){
 ## Updates
 I'm going to revise this project into a Line bot which provides the program query service. The user can enter keywords and query the most recently programs which contains the keywords.
 * Line bot
+* Carousel
+* Buttons
