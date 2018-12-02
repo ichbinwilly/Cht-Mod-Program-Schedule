@@ -20,6 +20,7 @@ node app
 ```
 ## Live Demo
  > [Live Demo on AWS Elastic Beanstalk](http://chtmod-env.sbfgd8xg3y.us-east-2.elasticbeanstalk.com/)
+ Sorry, the live demo is no longer available :( (updates on 2018/12/02)
 
 ![screenshot2](https://cdn-images-1.medium.com/max/800/1*IYupOsr6YuIJZVjy6oqBzQ.png)
 
